@@ -1,7 +1,6 @@
 import { View } from "react-native";
+import { styles } from "./style";
 
 export default function Point() {
-    return (
-        <View style={{width: 30, height: 30, borderRadius: 30, backgroundColor: "#F5F5F5"}}/>
-    )
+  return <View style={styles.point} />;
 }
