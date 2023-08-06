@@ -1,11 +1,13 @@
 import { FlatList, Text, View } from "react-native";
 import Card from "../card";
+import { styles } from "./style";
 
 export default function FindOutMore() {
   const services = [
     {
       title: "Parcele compras no app",
-      information: "Descontos em compras à vista no crédito, controle total sobr...",
+      information:
+        "Descontos em compras à vista no crédito, controle total sobr...",
       image:
         "https://www.melhorescartoes.com.br/wp-content/uploads/2021/05/nova-logo-nubank.jpg",
     },
@@ -23,17 +25,16 @@ export default function FindOutMore() {
     },
     {
       title: "WhatsApp",
-      information: "Pagamentos seguros, rápidos e sem tarifa. A experiência ...",
+      information:
+        "Pagamentos seguros, rápidos e sem tarifa. A experiência ...",
       image:
         "https://www.callbell.eu/wp-content/uploads/2019/03/Senza-nome.png",
-    }
+    },
   ];
 
   return (
-    <View style={{ marginHorizontal: 16 }}>
-      <Text style={{ fontSize: 17, fontWeight: "bold", marginBottom: 6 }}>
-        Descubra mais
-      </Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Descubra mais</Text>
       <FlatList
         horizontal={true}
         data={services}
