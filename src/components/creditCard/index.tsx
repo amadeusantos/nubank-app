@@ -3,12 +3,6 @@ import Button from "../button";
 import { AntDesign } from "@expo/vector-icons";
 import { styles } from "./style";
 
-interface CreditCardProps {
-  value: string;
-  limite: string;
-  active?: boolean;
-}
-
 export default function CreditCard({ value, limite, active }: CreditCardProps) {
   return (
     <Button>
