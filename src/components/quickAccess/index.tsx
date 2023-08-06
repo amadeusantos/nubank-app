@@ -1,13 +1,9 @@
-import { Image, ImageSourcePropType, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import Button from "../button";
 import { styles } from "./style";
+import { QuickAccessProps } from "./QuickAccessProps";
 
-interface Access {
-  name: string;
-  icon: ImageSourcePropType;
-}
-
-export default function QuickAccess({ name, icon }: Access) {
+export default function QuickAccess({ name, icon }: QuickAccessProps) {
   return (
     <Button>
       <View style={styles.container}>
