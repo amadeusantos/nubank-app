@@ -2,11 +2,6 @@ import { Text, View } from "react-native";
 import Button from "../button";
 import { styles } from "./style";
 
-export interface AnnouncementProps {
-  title: string;
-  information: string;
-}
-
 export default function Announcement({
   title,
   information,
