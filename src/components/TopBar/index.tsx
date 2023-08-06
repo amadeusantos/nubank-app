@@ -1,37 +1,28 @@
-import { Image, Text, View,  } from "react-native";
+import { Image, Text, View } from "react-native";
 import Button from "../button";
 import { AntDesign } from "@expo/vector-icons";
 import Perfil from "../../assets/images/perfil.png";
+import { styles } from "./style";
 interface TopBarProps {
-  setHidden: () => void
+  setHidden: () => void;
 }
 
-export default function TopBar({setHidden}: TopBarProps) {
+export default function TopBar({ setHidden }: TopBarProps) {
   return (
-    <View
-      style={{
-        width: "100%",
-        height: 128,
-        paddingHorizontal: 16,
-        backgroundColor: "#8A05BE",
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "flex-end",
-      }}
-    >
+    <View style={styles.container}>
       <Button>
-        <Image source={Perfil} style={{ width: 36, height: 36, borderRadius: 30}} />
+        <Image source={Perfil} style={styles.perfilImage} />
       </Button>
 
-      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
+      <View style={styles.itensRight}>
         <Button onPress={setHidden}>
-        <AntDesign name="eyeo" size={32} color="#F5F5F5" />
+          <AntDesign name="eyeo" size={32} color="#F5F5F5" />
         </Button>
         <Button>
-        <AntDesign name="questioncircleo" size={24} color="#F5F5F5" />
+          <AntDesign name="questioncircleo" size={24} color="#F5F5F5" />
         </Button>
         <Button>
-        <AntDesign name="adduser" size={24} color="#F5F5F5" />
+          <AntDesign name="adduser" size={24} color="#F5F5F5" />
         </Button>
       </View>
     </View>
