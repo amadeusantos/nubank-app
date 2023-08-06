@@ -3,9 +3,6 @@ import Button from "../button";
 import { AntDesign } from "@expo/vector-icons";
 import Perfil from "../../assets/images/perfil.png";
 import { styles } from "./style";
-interface TopBarProps {
-  setHidden: () => void;
-}
 
 export default function TopBar({ setHidden }: TopBarProps) {
   return (
