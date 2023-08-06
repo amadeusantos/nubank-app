@@ -1,11 +1,6 @@
-import { ReactNode } from "react";
-import { StyleProp, TouchableOpacity, ViewStyle } from "react-native";
+import { TouchableOpacity } from "react-native";
 import { styles } from "./style";
-
-interface ButtonProps {
-  children: ReactNode;
-  onPress?: () => void;
-}
+import { ButtonProps } from "./ButtonProps";
 
 export default function Button({ children, onPress }: ButtonProps) {
   return (
