@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { ScrollView, StyleSheet, View } from "react-native";
+import { ScrollView, View } from "react-native";
 import TopBar from "./src/components/topBar";
 import AccountMenu from "./src/components/accountMenu";
 import Line from "./src/components/line";
@@ -37,23 +37,14 @@ export default function App() {
           ]}
         />
         <Line />
-        <CreditCard value="200,00"  limite="1.000,00" active />
+        <CreditCard value="200,00" limite="1.000,00" active />
         <Line />
         <Services />
         <Line />
         <FindOutMore />
-        <View style={{height: 100}} />
+        <View style={{ height: 100 }} />
       </ScrollView>
       <TabBar />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
