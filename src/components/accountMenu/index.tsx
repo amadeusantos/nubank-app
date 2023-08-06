@@ -4,7 +4,7 @@ import Button from "../button";
 import { AntDesign } from "@expo/vector-icons";
 import Portfolio from "../../assets/images/portfolio.png";
 import Point from "../point";
-import Announcement, { AnnouncementProps } from "../announcement";
+import Announcement from "../announcement";
 import Pix from "../../assets/images/pix.png";
 import Pay from "../../assets/images/pay.png";
 import Loan from "../../assets/images/loan.png";
@@ -12,13 +12,6 @@ import IninitiateMoneyTransfer from "../../assets/images/initiateMoneyTransfer.p
 import RequestMoney from "../../assets/images/requestMoney.png";
 import Phone from "../../assets/images/phone.png";
 import { styles } from "./style";
-
-interface AccountMenuProps {
-  name: string;
-  balance: number;
-  hidden: boolean;
-  listAnnouncement: AnnouncementProps[];
-}
 
 export default function AccountMenu({
   name,
