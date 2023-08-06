@@ -3,11 +3,6 @@ import Button from "../button";
 import { MaterialIcons } from "@expo/vector-icons";
 import { styles } from "./style";
 
-interface ServiceProps {
-  name: string;
-  icon: any;
-}
-
 export default function Service({ name, icon }: ServiceProps) {
   return (
     <Button>
